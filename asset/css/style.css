@@ -101,11 +101,11 @@ li {
 .logotipo_side img{
     width: 150px;
     height: auto;
-    border-radius: 90px;
+    border-radius: 75px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-
+/*Los Productos Box Central*/
 .contenido{
     grid-area: contenido;
     background-color: #EDE8DC;
@@ -117,7 +117,7 @@ li {
     min-height: cal(100vh - 20px - 65px);
     padding: 5px;
     padding-top: 10px;
-    padding-left: 70px;
+    padding-left: 50px;
     gap: 20px;
 }
 .card{
@@ -129,6 +129,8 @@ li {
     text-align: center;
     border: 1.5px solid black;
     overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(74, 72, 72, 0.3);
 }
 .card img{
     width: 100%;
@@ -140,7 +142,17 @@ li {
     display: flex;
     justify-content: center;
 }
+.sep_inconos{
+    padding-left: 5px;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+}
 
+/*footer*/
 
 .footer{
     grid-area: footer;
