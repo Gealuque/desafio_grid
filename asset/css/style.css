@@ -13,11 +13,13 @@
         'navbar navbar'
         'sidebar contenido'
         'footer footer';
+    max-height: 100vh;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 9% auto 3%;
 }
 /*Navbar*/
 .navbar{
     grid-area: navbar;
-    height: 60px;
     border-radius: 10px;
     border-bottom: 1px solid lightgrey;
 }
@@ -67,12 +69,11 @@
 /*Sidebar*/
 .sidebar{
     grid-area: sidebar;
+    max-height: 100vh;
 }
 .boxside{
-    width: 20%;
     background-color: #A5B68D;
     color: rgb(245, 241, 241);
-    min-height: cal(100vh - 20px - 65px);
     display: flex;
     flex-direction: column;
     padding: 4px;
@@ -110,21 +111,21 @@ li {
     grid-area: contenido;
     background-color: #EDE8DC;
 }
-.boxcont{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    min-height: cal(100vh - 20px - 65px);
-    padding: 5px;
-    padding-top: 10px;
-    padding-left: 50px;
-    gap: 20px;
+.grid-productos{
+    display: grid;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px 30px;
+    max-height: 100vh;
 }
+
 .card{
     display: flex;
     flex-direction: column;
     padding: 2px;
-    width: 250px;
+    width: 270px;
     height: auto;
     text-align: center;
     border: 1.5px solid black;
@@ -156,7 +157,6 @@ a:hover{
 .footer{
     grid-area: footer;
     background-color: #C1CFA1;
-    height: 20px;
     justify-content: center;
     display: flex;
 }
